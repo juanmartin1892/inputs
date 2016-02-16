@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>InputsExample</title>
+  <link rel="stylesheet" href="./main.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <div class="ezzingForm container col-md-6">
+    <form role="form" ng-submit="saveNewProject()" name="newProjectForm" novalidate="" ng-show="app.loading === 0" class="form-horizontal css-form col-md-12 mb-lg">
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" ng-model="newProject.name" ng-model-options="{ updateOn: 'blur' }" name="name" required="" class="form-control"/>
+          <label class="control-label">Input 1</label>
+        </div>
+        <div class="form-group">
+          <input type="text" ng-model="newProject.discount" ng-model-options="{ updateOn: 'blur' }" name="discount" required="" class="form-control error"/>
+          <label class="control-label">Input error</label>
+          <div class="css-form__errorMessage">
+            <div>There is an error in this input</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <select ng-model="newProject.currency" ng-model-options="{ updateOn: 'blur' }" name="currency" required="" class="form-control">
+            <option value=""></option>
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+          </select>
+          <label class="control-label">Select</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="ezzingForm container col-md-6">
+    <form role="form" ng-submit="saveNewProject()" name="newProjectForm" novalidate="" ng-show="app.loading === 0" class="vdv-form col-md-12 mb-lg">
+      <div class="col-md-12">
+        <div class="form-group container-fluid">
+          <label class="control-label col-sm-3"> Input 1</label>
+          <div class="col-sm-9">
+            <input type="text" ng-model="newProject.name" ng-model-options="{ updateOn: 'blur' }" name="name" required="" class="form-control"/>
+          </div>
+        </div>
+        <div class="form-group container-fluid">
+          <label class="control-label col-sm-3"> Input 2</label>
+          <div class="col-sm-9">
+            <input type="text" ng-model="newProject.discount" ng-model-options="{ updateOn: 'blur' }" name="discount" required="" class="form-control error"/>
+          </div>
+        </div>
+        <div class="form-group container-fluid">
+          <label class="control-label col-sm-3"> Select</label>
+          <div class="col-sm-9">
+            <select ng-model="newProject.currency" ng-model-options="{ updateOn: 'blur' }" name="currency" required="" class="form-control">
+              <option value=""></option>
+              <option>option1</option>
+              <option>option2</option>
+              <option>option3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>

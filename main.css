@@ -1,0 +1,230 @@
+.form-control {
+  border-radius: 0px;
+}
+
+.form-control:focus {
+  border-color: #F0F0F0;
+  box-shadow: none;
+}
+
+.ezzingForm {
+  margin: 40px;
+  padding: 20px;
+}
+
+.ezzingForm .css-form .form-group {
+  position: relative;
+  padding: 0% 10% 0% 10%;
+  max-width: 100%;
+}
+
+.ezzingForm .css-form .form-group label {
+  color: #999;
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 10%;
+  top: 0px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.ezzingForm .css-form .form-group__options {
+  background-color: #FFF;
+  border: 2px;
+  border-top: 0px;
+  border-style: solid;
+  border-color: #F0F0F0;
+  position: absolute;
+  z-index: 1000;
+  width: 80%;
+}
+
+.ezzingForm .css-form .form-group__options__option {
+  padding: 5px 0px;
+}
+
+.ezzingForm .css-form .form-group__options__option p {
+  margin-bottom: 0px;
+}
+
+.ezzingForm .css-form .form-group__options__option:hover {
+  background-color: #F0F0F0;
+}
+
+.ezzingForm .css-form .form-group input[type="text"], .ezzingForm .css-form .form-group input[type="number"], .ezzingForm .css-form .form-group input[type="email"], .ezzingForm .css-form .form-group input[type="password"] {
+  border: 0px;
+  padding: 0px;
+  background: none;
+  box-shadow: none;
+  border-bottom: 2px solid #F0F0F0;
+  border-radius: 0px;
+}
+
+.ezzingForm .css-form .form-group input[type="text"]:focus, .ezzingForm .css-form .form-group input[type="number"]:focus, .ezzingForm .css-form .form-group input[type="email"]:focus, .ezzingForm .css-form .form-group input[type="password"]:focus {
+  border-color: #f4a93c;
+}
+
+.ezzingForm .css-form .form-group input[type="text"]:valid, .ezzingForm .css-form .form-group input[type="number"]:valid, .ezzingForm .css-form .form-group input[type="email"]:valid, .ezzingForm .css-form .form-group input[type="password"]:valid {
+  border-color: #f4a93c;
+  background: url("./img/check-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form .form-group input[type="text"]:focus ~ label, .ezzingForm .css-form .form-group input[type="text"]:valid ~ label, .ezzingForm .css-form .form-group input[type="number"]:focus ~ label, .ezzingForm .css-form .form-group input[type="number"]:valid ~ label, .ezzingForm .css-form .form-group input[type="email"]:focus ~ label, .ezzingForm .css-form .form-group input[type="email"]:valid ~ label, .ezzingForm .css-form .form-group input[type="password"]:focus ~ label, .ezzingForm .css-form .form-group input[type="password"]:valid ~ label {
+  left: 10%;
+  top: -16px;
+  font-size: 10px;
+  color: #A6A6A6;
+}
+
+.ezzingForm .css-form .form-group input[type="text"].error, .ezzingForm .css-form .form-group input[type="number"].error, .ezzingForm .css-form .form-group input[type="email"].error, .ezzingForm .css-form .form-group input[type="password"].error {
+  border-color: #FF0000;
+  background: url("./img/cross-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form .form-group input[type="text"].ng-valid.ng-touched, .ezzingForm .css-form .form-group input[type="number"].ng-valid.ng-touched, .ezzingForm .css-form .form-group input[type="email"].ng-valid.ng-touched, .ezzingForm .css-form .form-group input[type="password"].ng-valid.ng-touched {
+  border-color: #f4a93c;
+  background: url("./img/check-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form .form-group textarea {
+  padding-left: 0px;
+  border: 0px;
+  box-shadow: none;
+  border-bottom: 2px solid #F0F0F0;
+  border-radius: 0px;
+}
+
+.ezzingForm .css-form .form-group textarea:focus {
+  border-color: #f4a93c;
+}
+
+.ezzingForm .css-form .form-group textarea:focus ~ label, .ezzingForm .css-form .form-group textarea.ng-dirty ~ label {
+  left: 10%;
+  top: -16px;
+  font-size: 10px;
+  color: #A6A6A6;
+}
+
+.ezzingForm .css-form .form-group textarea.ng-invalid.ng-touched {
+  border-color: #FF0000;
+  background: url("./img/cross-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form .form-group textarea.ng-valid.ng-touched {
+  border-color: #f4a93c;
+  background: url("./img/check-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form .form-group select {
+  -webkit-appearance: none;
+  border: 0px;
+  box-shadow: none;
+  border-bottom: 2px solid #F0F0F0;
+  padding: 0px;
+  background: url("./img/down-arrow.png") 98%/5% no-repeat;
+  border-radius: 0px;
+}
+
+.ezzingForm .css-form .form-group select:focus {
+  border-color: #f4a93c;
+}
+
+.ezzingForm .css-form .form-group select:focus ~ label, .ezzingForm .css-form .form-group select:valid ~ label {
+  left: 10%;
+  top: -16px;
+  font-size: 10px;
+  color: #A6A6A6;
+}
+
+.ezzingForm .css-form .form-group select:valid {
+  border-color: #f4a93c;
+  background: url("./img/down-arrow-valid.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form .form-group select.ng-invalid.ng-touched {
+  border-color: #FF0000;
+  background: url("./img/cross-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form .form-group select.ng-valid.ng-touched {
+  border-color: #f4a93c;
+  background: url("./img/down-arrow-valid.png") 98%/5% no-repeat;
+}
+
+.ezzingForm .css-form.ng-submitted input[type="text"].ng-invalid, .ezzingForm .css-form.ng-submitted input[type="number"].ng-invalid, .ezzingForm .css-form.ng-submitted input[type="email"].ng-invalid, .ezzingForm .css-form.ng-submitted input[type="password"].ng-invalid {
+  border-color: #FF0000;
+  background: url("./img/cross-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form.ng-submitted input[type="text"].ng-valid, .ezzingForm .css-form.ng-submitted input[type="number"].ng-valid, .ezzingForm .css-form.ng-submitted input[type="email"].ng-valid, .ezzingForm .css-form.ng-submitted input[type="password"].ng-valid {
+  border-color: #f4a93c;
+  background: url("./img/check-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form.ng-submitted textarea.ng-invalid {
+  border-color: #FF0000;
+  background: url("./img/cross-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form.ng-submitted textarea.ng-valid {
+  border-color: #f4a93c;
+  background: url("./img/check-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form.ng-submitted select.ng-invalid {
+  border-color: #FF0000;
+  background: url("./img/cross-ico.png") 98%/3% no-repeat;
+}
+
+.ezzingForm .css-form.ng-submitted select.ng-valid {
+  border-color: #f4a93c;
+  background: url("./img/down-arrow-valid.png") 98%/5% no-repeat;
+}
+
+.ezzingForm .css-form .form-control[disabled] {
+  background-color: #ffffff;
+}
+
+.ezzingForm .css-form__errorMessage {
+  color: #FF0000;
+}
+
+.ezzingForm .vdv-form .form-group label {
+  color: #8a8b8a;
+  font-weight: 300;
+}
+
+.ezzingForm .vdv-form .form-group label::before {
+  font-family: 'FontAwesome';
+  content: '\f111 ';
+  font-size: .5em;
+  color: #f4a93c;
+  vertical-align: middle;
+}
+
+.ezzingForm .vdv-form .form-group input[type="text"], .ezzingForm .vdv-form .form-group input[type="number"], .ezzingForm .vdv-form .form-group input[type="email"], .ezzingForm .vdv-form .form-group input[type="password"] {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+  color: #FFF;
+  background-color: #8a8b8a;
+  height: 20px;
+}
+
+.ezzingForm .vdv-form .form-group select {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-appearance: none;
+  background: url("./img/simple-triangulo_318-499.png") 98%/5% no-repeat;
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+  color: #FFF;
+  background-color: #8a8b8a;
+  height: 20px;
+}
